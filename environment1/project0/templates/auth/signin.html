@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="/static/css/auth.css">
 </head>
 <body>
-    <img class="hero-img" src="static\img\background.jpg" alt="">
+    <img class="hero-img" src="/static/img/background.jpg" alt="">
     <div class="form-container">
         <h3>Sign In</h3>
         <form action="" method="post">
             {% csrf_token %}
             <label for="username">Username:</label>
-            <input type="text" class="form-input" id="username" name="username" placeholder="Enter your username"><br><br>
+            <input type="text" class="form-input" id="username" name="username" placeholder="Enter your username" required><br><br>
             <label for="pass1">Password:</label>
-            <input type="password" class="form-input" id="pass1" name="pass1" placeholder="Enter your password"><br><br>
+            <input type="password" class="form-input" id="pass1" name="pass1" placeholder="Enter your password" required><br><br>
             <button type="submit" class="form-submit">Sign In</button>
         </form>
     </div>

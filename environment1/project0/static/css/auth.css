@@ -1,32 +1,31 @@
 body {
-    /* background: linear-gradient(); */
-    background: rgba(0, 24, 54, 1);
+    background: linear-gradient(rgba(0, 24, 54, 1),); 
+    background: rgb(0, 0, 0);
+    font-family: Verdana;
 }
 h3{
     font-family:"arial";
     margin: 0 0 15px 0;
     padding: 0;
-    text-align:justify;
+    text-align:center;
     font-size:x-large;
-    color:white;   
+    color:rgb(0, 0, 0);   
 }
 label {
-    color: #fff;
+    color: #000000;
 }
 
 .form-container {
     /* text-align: center; */
     padding: 40px;
-    background: rgba(0, 58, 131, 0.6);
+    background: rgba(255, 255, 255);
     /* background: rgba(76, 175, 80, 0.66); */
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
-    border: 1px solid rgba(76, 175, 80, 0.38);
-    /* border: 1px solid whitesmoke;
-    border-radius: 5px;
-    background-color: cyan; */
+    color: black;
+    /* backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px); */
+    /* border: 1px solid rgba(16, 22, 16, 0.38); */
     position:absolute;
     top: 50%;
     left: 50%;
@@ -34,14 +33,22 @@ label {
     width: 300px; 
     height: auto; 
 }
-  
+.form-input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
 .form-input {
+    margin-top: 5px;
+    
     width: 90%;
     padding: 10px;
-    
+    background-color: black;
+    color: white;
     margin-bottom:10px;
-    border: 1px solid cornsilk;
-    border-radius: 3px;
+    /* border: 1px solid cornsilk; */
+    border-radius: 30px;
 }
   
 .form-submit {
@@ -52,10 +59,20 @@ label {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 30px;
     cursor: pointer;
+    font-size: 20px;
+}
+.form-submit:hover{
+    background-color: white;
+    color: #007bff;
 }
 a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
+a:hover{
+    color: #007bff;
+}
+
+
